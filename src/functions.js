@@ -40,19 +40,26 @@ function fullName(firstName, lastName) {
 // Ex.:
 //   generateSentence('Kay', 'coffee', 'the local cafe');
 //   => 'Kay was drinking coffee at the local cafe.'
-function generateSentence(person, beverage, location) {}
+function generateSentence(person, beverage, location) {
+  generateSentence = ("Kay", "coffee", "the local cafe")
+  return `${person} was drinking ${beverage} at ${location}`
+}
 
 // Return the given string with all vowels replced with '*' characters.
 // Ex.:
 //   censorVowels('javascript');
 //   => 'j*v*scr*pt'
-function censorVowels(string) {}
+function censorVowels(string) {
+  const vowels = /[aeiou]+/g
+  return string.replace(vowels, "*")
+}
 
 // Return the given string in sticky case.
 // Ex.:
 //   stickyCase('hello world');
 //   => 'hElLo wOrLd'
-function stickyCase(string) {}
+function stickyCase(string) {
+}
 
 // Return the given string in leetspeak. Leetspeak is a modified version of
 // English where characters are replaced by numbers or symbols. For this
@@ -80,7 +87,7 @@ if (string === "s")
 if (string ==="t")
   return "7"
 }
-
+console.log(leetspeak("javascript"))
 
 export {
   approximatelyEqual,
