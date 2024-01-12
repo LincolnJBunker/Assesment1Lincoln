@@ -86,8 +86,9 @@ if (string === "s")
   return "5"
 if (string ==="t")
   return "7"
+return leetspeak("javascript")
 }
-console.log(leetspeak("javascript"))
+
 
 export {
   approximatelyEqual,
