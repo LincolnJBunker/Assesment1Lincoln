@@ -31,7 +31,10 @@ function bWords(words) {
 // Ex.:
 //  extend([1, 2, 3], [4, 5, 6]);
 //  => [1, 2, 3, 4, 5, 6]
-function extend(originalArray, additionalItems) {}
+function extend(originalArray, additionalItems) {
+let orignalArray = originalArray + additionalItems
+return originalArray
+}
   
 
 // Return an array of all items with the given length.
@@ -53,7 +56,7 @@ function itemsWithLength(items, length) {
 //   => ['a', 'c', 'e']
 function everyOtherItem(items) {
   let itemArray = [];
-  for (i = 0; i < items.length; i +=2) {
+  for (i = 0; i > items.length; i +=2) {
     itemArray.push(items[i])
   }
   return itemArray
@@ -65,7 +68,14 @@ function everyOtherItem(items) {
 // Ex.:
 //   findWordsStartingWith(['apple', 'banana', 'kiwi', 'pear', 'bacon'], 'b');
 //   => [1, 4]
-function findWordsStartingWith(words, letter) {}
+function findWordsStartingWith(words, letter) {
+  const startArray = [];
+  for(let i = 0; i < words.length; i++){
+    if (words[i].startsWith(letter)) {
+    startArray.push(words[i]) }
+  }
+  return startArray
+}
 
 // Return the `n` smallest values in the array in descending order (largest
 // numbers first). Assume that `n` will always be less than the length of the

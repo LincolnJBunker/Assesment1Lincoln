@@ -41,7 +41,7 @@ function fullName(firstName, lastName) {
 //   generateSentence('Kay', 'coffee', 'the local cafe');
 //   => 'Kay was drinking coffee at the local cafe.'
 function generateSentence(person, beverage, location) {
-  generateSentence = ("Kay", "coffee", "the local cafe")
+  generateSentence('kay', 'coffee', 'the local cafe')
   return `${person} was drinking ${beverage} at ${location}`
 }
 
