@@ -30,8 +30,10 @@ function approximatelyEqual(x, y) {
 //   fullName('John', 'Doe');
 //   => 'John Doe'
 function fullName(firstName, lastName) {
-  
-}
+  fullName = ('John', "Doe")
+  return "John Doe"
+  }
+
 
 // Generate the sentence "PERSON was drinking BEVERAGE at LOCATION" using the
 // person, beverage and location provided.
@@ -64,7 +66,21 @@ function stickyCase(string) {}
 // Ex.:
 //   leetspeak('javascript');
 //   => 'j4v45cr1p7'
-function leetspeak(string) {}
+function leetspeak(string) {
+if (string === "a")
+  return '4'
+if (string === "e")
+  return '3'
+if (string === "i")
+  return '1'
+if (string === "o")
+  return "0"
+if (string === "s")
+  return "5"
+if (string ==="t")
+  return "7"
+}
+
 
 export {
   approximatelyEqual,

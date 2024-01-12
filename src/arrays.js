@@ -2,7 +2,12 @@
 // Ex.:
 //   greaterThanTen([1, 2, 3, 11, 12, 13]);
 //   => [11, 12, 13]
-function greaterThanTen(numbers) {}
+function greaterThanTen(numbers) {
+  for (i = 0; i < greaterThanTen.length; i++) {
+    if (greaterThanTen[i] > 10)
+    return
+  }
+}
 
 // Given an array of strings, return all words that start with 'b' or 'B'.
 // Ex.:
