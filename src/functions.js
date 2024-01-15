@@ -41,8 +41,7 @@ function fullName(firstName, lastName) {
 //   generateSentence('Kay', 'coffee', 'the local cafe');
 //   => 'Kay was drinking coffee at the local cafe.'
 function generateSentence(person, beverage, location) {
-  generateSentence('kay', 'coffee', 'the local cafe')
-  return `${person} was drinking ${beverage} at ${location}`
+  return `${person} was drinking ${beverage} at ${location}.`
 }
 
 // Return the given string with all vowels replced with '*' characters.
@@ -59,6 +58,18 @@ function censorVowels(string) {
 //   stickyCase('hello world');
 //   => 'hElLo wOrLd'
 function stickyCase(string) {
+  let stickyString = "";
+  
+  for (let i = 0; i < string.length; i++){
+    let c = string.charAt(i);
+    if (i % 2 == 0) {
+      stickyString = stickyString + c.toLowerCase();
+    } else { 
+      stickyString = stickyString + c.toUpperCase();
+    }
+  }
+  
+  return stickyString;
 }
 
 // Return the given string in leetspeak. Leetspeak is a modified version of
@@ -74,19 +85,13 @@ function stickyCase(string) {
 //   leetspeak('javascript');
 //   => 'j4v45cr1p7'
 function leetspeak(string) {
-if (string === "a")
-  return '4'
-if (string === "e")
-  return '3'
-if (string === "i")
-  return '1'
-if (string === "o")
-  return "0"
-if (string === "s")
-  return "5"
-if (string ==="t")
-  return "7"
-return leetspeak("javascript")
+  string = string.replaceAll("a", "4");
+  string = string.replaceAll("e", "3");
+  string = string.replaceAll("i", "1");
+  string = string.replaceAll("o", "0");
+  string = string.replaceAll("s", "5");
+  string = string.replaceAll("t", "7");
+  return string;
 }
 
 

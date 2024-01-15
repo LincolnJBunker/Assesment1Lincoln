@@ -32,8 +32,8 @@ function bWords(words) {
 //  extend([1, 2, 3], [4, 5, 6]);
 //  => [1, 2, 3, 4, 5, 6]
 function extend(originalArray, additionalItems) {
-let orignalArray = originalArray + additionalItems
-return originalArray
+  originalArray = [...originalArray, ...additionalItems];
+  return originalArray
 }
   
 
@@ -56,10 +56,11 @@ function itemsWithLength(items, length) {
 //   => ['a', 'c', 'e']
 function everyOtherItem(items) {
   let itemArray = [];
-  for (i = 0; i > items.length; i +=2) {
-    itemArray.push(items[i])
+  for (let i = 0; i < items.length; i +=2) {
+    itemArray.push(items[i]);
   }
-  return itemArray
+  return itemArray;
+  console.log(everyOtherItem)
 }
 
 // Given a list of words and a letter, return the indexes of the words that
@@ -70,10 +71,12 @@ function everyOtherItem(items) {
 //   => [1, 4]
 function findWordsStartingWith(words, letter) {
   const startArray = [];
+  
   for(let i = 0; i < words.length; i++){
     if (words[i].startsWith(letter)) {
-    startArray.push(words[i]) }
+    startArray.push(words.index[i]) }
   }
+  console.log(findWordsStartingWith(['apple', 'banana', 'kiwi', 'pear', 'bacon'], 'b'))
   return startArray
 }
 
