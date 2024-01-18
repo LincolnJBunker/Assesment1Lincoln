@@ -63,9 +63,19 @@ function censorVowels(string) {
 //   stickyCase('hello world');
 //   => 'hElLo wOrLd'
 function stickyCase(string) {
-  for (let i = 0; i < string.length; i++){
+  let stickeyString = ""
+  for (let i = 0; i < string.length; i++) {
+    let letter = string[i]
+
+    if (i % 2 === 0) {
+      letter.toLocaleLowerCase([i])
+    } else {
+      letter.toUpperCase([i])
+    }
   }
+  return stickeyString
 }
+  
 
 // Return the given string in leetspeak. Leetspeak is a modified version of
 // English where characters are replaced by numbers or symbols. For this

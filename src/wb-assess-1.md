@@ -14,8 +14,8 @@
 Which statement is true about JavaScript?
 
 - [ ] **A.** JavaScript is case insensitive, so `true` is the same as `True`.
-- [ ] **B.** JavaScript ignores whitespace characters like spaces and newline characters.
-- [x] **C.** JavaScript requires you to end all statements with a semicolon (`;`).
+- [x] **B.** JavaScript ignores whitespace characters like spaces and newline characters.
+- [ ] **C.** JavaScript requires you to end all statements with a semicolon (`;`).
 - [ ] **D.** All of the above are true.
 - [ ] **E.** None of the above are true.
 
@@ -64,8 +64,8 @@ if (word) {
 ```
 
 - [ ] **A.** `yay!`
-- [ ] **B.** `no :(`
-- [x] **C.** An empty line
+- [x] **B.** `no :(`
+- [ ] **C.** An empty line
 - [ ] **D.** N/A because the code has an error
 
 ### A.5. Fill in the blank
@@ -104,9 +104,9 @@ function makeWordArray(phrase) {
 ```
 
 - [ ] **A.** Nothing happens because the program errors out.
-- [x] **B.** It defines a function called `makeWordArray` and converts `phrase` into an array of words.
+- [ ] **B.** It defines a function called `makeWordArray` and converts `phrase` into an array of words.
 - [ ] **C.** It defines a function called `makeWordArray` and outputs a word array.
-- [ ] **D.** It defines a function called `makeWordArray` but nothing else happens.
+- [x] **D.** It defines a function called `makeWordArray` but nothing else happens.
 
 ### A.7. Identify the error
 

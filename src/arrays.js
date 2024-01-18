@@ -74,9 +74,8 @@ function findWordsStartingWith(words, letter) {
   
   for(let i = 0; i < words.length; i++){
     if (words[i].startsWith(letter)) {
-    startArray.push(words.index[i]) }
+    startArray.push(i) }
   }
-  console.log(findWordsStartingWith(['apple', 'banana', 'kiwi', 'pear', 'bacon'], 'b'))
   return startArray
 }
 
@@ -102,6 +101,12 @@ function findIndex(items, value) {}
 //   range(1, 5);
 //   => [1, 2, 3, 4, 5]
 function range(start, stop) {
+  let rangeArr = []
+
+  for (let i = start; i <= stop; i++) {
+    rangeArr.push(i)
+  }
+  return rangeArr
 }
 
 export {
